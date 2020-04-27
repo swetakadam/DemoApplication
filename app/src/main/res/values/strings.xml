@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">DemoApplication</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Demo</string>
+    <string name="nav_header_subtitle">demo@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="image_description">Image Description</string>
+    <string name="home_title">Explore Android Platform</string>
+    <string name="android_platform_details_text">This swipe up animation is done using MotionLayout, Let us see some more awesome features.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="demo_text">Demo App</string>
+    <string name="android_ml_title_text">Image Classification using TensorFlow Lite on Android</string>
+    <string name="android_ml_title">TensorFlow Lite for Flowers</string>
+    <string name="tensor_flow_detail_text"><Data><![CDATA[TensorFlow Lite provides all the tools you need to convert and run TensorFlow models on mobile, embedded, and IoT devices.
+    The following guide walks through each step of the developer workflow and provides links to further instructions.
+<br/>
+<br/>
+<b>1. Choose a model</b>
+<br/><br/>A TensorFlow model is a data structure that contains the logic and knowledge of a machine learning network trained to solve a particular problem. There are many ways to obtain a TensorFlow model,
+from using pre-trained models to training your own.
+To use a model with TensorFlow Lite, you must convert a full
+TensorFlow model into the TensorFlow Lite format—you cannot create or train a model using TensorFlow Lite.
+So you must start with a regular TensorFlow model, and then convert the model.
+<br/>
+<br/>
+<b>2. Convert the model</b>
+<br/><br/>
+TensorFlow Lite is designed to execute models efficiently on mobile and other embedded devices with limited compute
+and memory resources. Some of this efficiency comes from the use of a special format for storing models.
+TensorFlow models must be converted into this format before they can be used by TensorFlow Lite.
+
+Converting models reduces their file size and introduces optimizations
+that do not affect accuracy. The TensorFlow Lite converter provides options that allow you to further reduce file size and increase speed of execution, with some trade-offs.
+<br/>
+<br/>
+<b>3. Run inference with the model</b>
+<br/><br/>
+Inference is the process of running data through a model to obtain predictions. It requires a model, an interpreter, and input data.
+TensorFlow Lite interpreter
+The TensorFlow Lite interpreter is a library that takes a model file, executes the operations it defines on input data, and provides access to the output.
+The interpreter works across multiple platforms and provides a simple API for running TensorFlow Lite models from Java, Swift, Objective-C, C++, and Python.
+<br/>
+<br/>
+<b>4. Optimize your model</b>
+<br/>
+<br/>
+TensorFlow Lite provides tools to optimize the size and performance of your models, often with minimal impact on accuracy. Optimized models may require slightly more complex training, conversion, or integration.
+<br/>
+Machine learning optimization is an evolving field, and TensorFlow Lite\'s Model Optimization Toolkit is continually growing as new techniques are developed.
+<br/><br/>
+]]></Data>
+    </string>
+    <string name="explore_text">Click Explore to Recognize flowers.</string>
+    <string name="coming_soon">Coming Soon !!!</string>
+    <string name="coming_soon_detailed_message">Sorry, I still have to add the code for recognizing flowers using TensorFlow Lite on the Android platform.</string>
+    <string name="okay">Ok</string>
+</resources>

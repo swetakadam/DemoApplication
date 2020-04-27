@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/home_header_img_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/image_description"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/content_linear_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/android_wallpaper1" />
+
+    <include
+        android:id="@+id/content_linear_layout"
+        layout="@layout/view_home_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/content_linear_layout"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="parent"-->
+    <!--        >-->
+
+    <!--        <com.google.android.material.textview.MaterialTextView-->
+    <!--            android:id="@+id/content_textview"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:lineSpacingMultiplier="1.25"-->
+    <!--            android:paddingStart="32dp"-->
+    <!--            android:paddingEnd="32dp"-->
+    <!--            android:paddingBottom="32dp"-->
+    <!--            android:background="@android:color/white"-->
+    <!--            android:text="@string/android_platform_details_text"-->
+    <!--            android:textSize="20sp"-->
+    <!--            android:typeface="sans" />-->
+    <!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/header_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/content_linear_layout"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/header_title_textvew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title_background"
+            android:padding="32dp"
+            android:text="@string/home_title"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

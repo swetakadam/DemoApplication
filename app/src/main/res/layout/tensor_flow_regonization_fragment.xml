@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?><!--<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    xmlns:tools="http://schemas.android.com/tools"> -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tensorflow_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/tensor_flow_header_image"
+        android:layout_width="0dp"
+        android:layout_height="320dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/image_description"
+        android:scaleType="centerCrop"
+        android:transitionName="tensor_flow_header_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sunflower" />
+
+
+    <!--  <com.google.android.material.chip.Chip
+          style="@style/Widget.MaterialComponents.Chip.Action"
+          android:id="@+id/action_tensorflow"
+          android:layout_width="wrap_content"
+          android:layout_height="64dp"
+          android:layout_marginStart="24dp"
+          android:layout_marginBottom="8dp"
+          android:text="Start Tensorflow"
+          android:textAppearance="@style/textChip"
+          android:textColor="@android:color/white"
+          app:chipBackgroundColor="@color/primaryColor"
+          app:chipCornerRadius="28dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:textEndPadding="16dp"
+          app:textStartPadding="16dp" /> -->
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/header_title_textview"
+        style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/android_ml_title"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tensor_flow_header_image"
+        tools:text="@string/android_ml_title" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tensor_flow_detail_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:scrollbars="vertical"
+        android:text="@string/tensor_flow_detail_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_title_textview" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/exploreExtendedFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/primaryColor"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_menu_camera"
+        android:text="Explore"
+        app:layout_constraintBottom_toBottomOf="@+id/tensor_flow_header_image"
+        app:layout_constraintEnd_toEndOf="@+id/tensor_flow_header_image"
+        app:layout_constraintTop_toBottomOf="@+id/tensor_flow_header_image" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout><!--</androidx.core.widget.NestedScrollView>-->
