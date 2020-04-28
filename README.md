@@ -13,3 +13,5 @@ Goals
 7. Add pagination component 
 8. Use Android Navigation Component (Done)
 9. Use Android Livedata Component (Done)
+
+https://user-images.githubusercontent.com/5216040/80432491-41063d80-88a9-11ea-9e65-2235f324c754.gif
