@@ -14,4 +14,5 @@ Goals
 8. Use Android Navigation Component (Done)
 9. Use Android Livedata Component (Done)
 
-![Image description](https://user-images.githubusercontent.com/5216040/80432491-41063d80-88a9-11ea-9e65-2235f324c754.gif)
+![Demo GIF](https://user-images.githubusercontent.com/5216040/80553750-c52af480-897f-11ea-99bb-5050e7574af5.gif)
+
