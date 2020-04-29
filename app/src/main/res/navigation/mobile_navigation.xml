@@ -50,5 +50,5 @@
     <fragment
         android:id="@+id/tensorFlowFragment"
         android:name="com.example.demoapplication.ui.tensorflow.TensorFlowRegonizationFragment"
-        android:label="TensorFlowRegonizationFragment" />
+        android:label="" />
 </navigation>

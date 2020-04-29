@@ -62,10 +62,6 @@ class TensorFlowRegonizationFragment : Fragment() {
             }
         }
 
-        Toast.makeText(context, getString(R.string.explore_text), Toast.LENGTH_SHORT)
-            .also {
-                it.setGravity(Gravity.TOP, 10, 10)
-            }.show()
 
 
     }
