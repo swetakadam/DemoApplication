@@ -59,7 +59,7 @@ androidExtensions {
 
 dependencies {
     def lifecycle_version = "2.2.0-alpha03"
-    def nav_version = "2.3.0-alpha02" //2.2.1
+    //def nav_version = "2.3.0-alpha02" //2.2.1
     def koin_version = '2.0.1'
     def paging_version = "2.1.0"
 
@@ -71,10 +71,12 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.google.android.material:material:1.2.0-alpha06'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta4'
-    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation "androidx.recyclerview:recyclerview:1.2.0-alpha01"
     // For control over item selection of both touch and mouse driven selection
     implementation "androidx.recyclerview:recyclerview-selection:1.1.0-rc01"
     implementation 'androidx.cardview:cardview:1.0.0'
+    implementation "androidx.fragment:fragment-ktx:$fragment_version"
+
 
     // Retrofit as our REST service
     implementation 'com.squareup.retrofit2:retrofit:2.6.1'
@@ -122,15 +124,15 @@ dependencies {
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
 
     // Dynamic Feature Module Support
-    implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
+    //implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
 
     implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
 
     // Glide for loading and caching  images
     implementation 'com.github.bumptech.glide:glide:4.11.0'
-    //kapt 'com.github.bumptech.glide:compiler:4.11.0'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    kapt 'com.github.bumptech.glide:compiler:4.11.0'
+    //annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
 
 
     //Timber for logs
@@ -154,6 +156,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 
     // Testing Navigation
-    androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
+    //androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
 
 }

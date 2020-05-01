@@ -10,6 +10,7 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import androidx.transition.TransitionInflater
 import com.example.demoapplication.R
+import com.google.android.material.transition.Hold
 import kotlinx.android.synthetic.main.fragment_gallery.*
 import kotlinx.android.synthetic.main.fragment_gallery.view.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -21,30 +22,20 @@ class GalleryFragment : Fragment() {
     private lateinit var galleryAdapter: GalleryAdapter
 
 
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view =  inflater.inflate(R.layout.fragment_gallery, container, false)
+        val view = inflater.inflate(R.layout.fragment_gallery, container, false)
         //setRecyclerView(view)
         return view
     }
 
-    private fun setRecyclerView(view:View){
-        galleryAdapter = GalleryAdapter()
-        view.gallery_list_rv.apply {
-            layoutManager = StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL)
-            adapter = galleryAdapter
-
-            //postponeEnterTransition()
-//2
-//            this.viewTreeObserver.addOnPreDrawListener {
-//                //3
-//                startPostponedEnterTransition()
-//                true
-//            }
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        exitTransition = Hold().apply {
+            duration = resources.getInteger(R.integer.reply_motion_default_large).toLong()
         }
     }
 
@@ -62,7 +53,7 @@ class GalleryFragment : Fragment() {
 
         })
         //Observe the viewmodel
-        galleryViewModel.imagesLiveData.observe(this, Observer { pagedList ->
+        galleryViewModel.imagesLiveData.observe(viewLifecycleOwner, Observer { pagedList ->
             pagedList?.let {
                 Timber.d("within gallery list  live data page list size is " + pagedList.size)
                 galleryAdapter.submitList(pagedList)
@@ -72,27 +63,26 @@ class GalleryFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        //postponeEnterTransition()
+        // Postpone enter transitions to allow shared element transitions to run.
+        // https://github.com/googlesamples/android-architecture-components/issues/495
+        postponeEnterTransition()
+        view.doOnPreDraw { startPostponedEnterTransition() }
+
         galleryAdapter = GalleryAdapter()
         gallery_list_rv.apply {
-            layoutManager = StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL)
+            layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
             adapter = galleryAdapter
 
 //            postponeEnterTransition()
-////2
+//
 //            this.viewTreeObserver.addOnPreDrawListener {
-//                //3
+//
 //                startPostponedEnterTransition()
 //                true
 //            }
         }
 
-        postponeEnterTransition()
-        gallery_list_rv.doOnPreDraw { startPostponedEnterTransition() }
-        //gallery_list_rv.doOnPreDraw { startPostponedEnterTransition() }
-        //initialize the paged recycler view
-        //(activity as MainActivity).showProgressBar()
-
-
     }
+
+
 }
