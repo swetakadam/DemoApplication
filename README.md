@@ -17,12 +17,10 @@ Goals
 
 Bug - reverse shared transition from detail view to recycler is not working 
 https://github.com/android/architecture-components-samples/issues/495
-
-Tried possible fixes still not working 
-Here is the GIF 
+(fix is not working with latest navigation component) 
 
 
-
+Here is the GIF (Not a good resolution please check youtube video link)
 ![demo-sai](https://user-images.githubusercontent.com/5216040/80793249-7762e780-8b4b-11ea-825b-c83e6d2ab984.gif)
 
 
