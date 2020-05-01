@@ -5,17 +5,20 @@ added to it.
 
 Goals 
 1. 100% Kotlin
-2. Koin for Dependency Injection (To Do) 
-3. Set up MVVM pattern. (work in progress) 
-4. Repository pattern. (work in progress) 
+2. Koin for Dependency Injection (done) 
+3. Set up MVVM pattern. (done) 
+4. Repository pattern. (done) 
 5. Animations using MotionLayout. (Done)
-6. Add unit tests
-7. Add pagination component 
+6. Add unit tests (to do)
+7. Add pagination component (done)
 8. Use Android Navigation Component (Done)
 9. Use Android Livedata Component (Done)
+10. Add shared transitions (Done)
 
-ToDo 
-1. Need to work on View insets for system navigation bar.
-Trying to set immersive app theme.
+Bug - reverse shared transition from detail view to recycler is not working 
+https://github.com/android/architecture-components-samples/issues/495
+
+Tried possible fixes still not working 
+
 
 
