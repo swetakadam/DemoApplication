@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rishabhharit.roundedimageview.RoundedImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gallery_iv"
+    app:cornerRadius="8dp"
+    android:adjustViewBounds="true"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+</com.rishabhharit.roundedimageview.RoundedImageView>

@@ -34,14 +34,6 @@ class MainActivity : AppCompatActivity() {
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
         val navController = findNavController(R.id.nav_host_fragment)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-//        appBarConfiguration = AppBarConfiguration(
-//            setOf(
-//                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,
-//                R.id.nav_tools, R.id.nav_share, R.id.nav_send
-//            ), drawerLayout
-//        )
 
         appBarConfiguration = AppBarConfiguration(
             navController.graph,
@@ -62,21 +54,20 @@ class MainActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
         )
 
-       //    window.decorView.systemUiVisibility = // Tells the system that the window wishes the content to
-//                // be laid out at the most extreme scenario. See the docs for
-//                // more information on the specifics
-//            View.SYSTEM_UI_FLAG_LAYOUT_STABLE or
-//                    // Tells the system that the window wishes the content to
-//                    // be laid out as if the navigation bar was hidden
-//                    View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-//
-
-
         //no title
+        window.statusBarColor = getColor(R.color.semiTransparent)
         supportActionBar?.setDisplayShowTitleEnabled(false)
 
 
     }
+
+//    fun showProgressBar() {
+//        toolbar_progress.visibility = View.VISIBLE
+//    }
+//
+//    fun hideProgressBar() {
+//        toolbar_progress.visibility = View.GONE
+//    }
 
 
     override fun onSupportNavigateUp(): Boolean {

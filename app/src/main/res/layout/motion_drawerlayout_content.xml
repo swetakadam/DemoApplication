@@ -6,5 +6,15 @@
     app:layoutDescription="@xml/scene_menu">
 
     <include layout="@layout/app_bar_main" />
+<!--    <me.zhanghai.android.materialprogressbar.MaterialProgressBar-->
+<!--        android:id="@+id/toolbar_progress"-->
+<!--        style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal"-->
+
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="4dp"-->
+<!--        android:indeterminate="true"-->
+<!--        android:theme="@style/progress"-->
+<!--        app:mpb_progressStyle="horizontal"-->
+<!--        app:mpb_useIntrinsicPadding="false" />-->
 
 </com.example.demoapplication.utils.DrawerContent>
