@@ -20,6 +20,7 @@ Update : Fixed reverse animation issue.
 2. worked on returning the saved pagelist to list (on back press)
 3. fixed animation postpone calls
 
+![reverse-animation](https://user-images.githubusercontent.com/5216040/80985360-f7a37a00-8de3-11ea-8d43-e2b521fa1e76.gif)
 
 
 
