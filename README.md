@@ -15,9 +15,14 @@ Goals
 9. Use Android Livedata Component (Done)
 10. Add shared transitions (Done)
 
-Bug - reverse shared transition from detail view to recycler is not working 
-https://github.com/android/architecture-components-samples/issues/495
-(fix is not working with latest navigation component) 
+Update : Fixed reverse animation issue.
+1. worked on viewmodel to hold the ui state for recycler view 
+2. worked on returning the saved pagelist to list (on back press)
+3. fixed animation postpone calls
+
+
+
+
 
 High resolution video 
 https://youtu.be/FYYncf1I5J8
