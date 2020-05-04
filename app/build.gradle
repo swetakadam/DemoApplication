@@ -60,7 +60,7 @@ androidExtensions {
 dependencies {
     def lifecycle_version = "2.2.0-alpha03"
     //def nav_version = "2.3.0-alpha02" //2.2.1
-    def koin_version = '2.0.1'
+    def koin_version = '2.1.0-beta-1' //koin-androidx-viewmodel:2.1.0-beta-1
     def paging_version = "2.1.0"
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])

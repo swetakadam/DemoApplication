@@ -4,6 +4,7 @@ import android.app.Application
 import android.content.SharedPreferences
 import android.os.Build
 import android.os.LocaleList
+import androidx.lifecycle.SavedStateHandle
 import androidx.security.crypto.EncryptedSharedPreferences
 import androidx.security.crypto.MasterKeys
 import com.example.demoapplication.BuildConfig
@@ -73,7 +74,7 @@ val appModules = module {
 
 
     //specific viewModel pattern to tell Koin how to build MainViewModel
-    viewModel { GalleryViewModel(galleryRepository = get()) }
+    viewModel { (handle: SavedStateHandle) -> GalleryViewModel(handle,galleryRepository = get()) }
 
 }
 
