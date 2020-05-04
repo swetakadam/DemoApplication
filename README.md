@@ -26,9 +26,9 @@ Update : Fixed reverse animation issue.
 
 
 High resolution video 
-https://youtu.be/FYYncf1I5J8
+https://youtu.be/vl-ASyMo19I
 
-Here is the GIF (Not a good resolution please check youtube video link)
+Here is the GIF (check youtube for more better quality.. as this GIF has loss of image quality)
 
 
 
